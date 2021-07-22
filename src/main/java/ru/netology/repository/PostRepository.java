@@ -35,6 +35,6 @@ public class PostRepository {
   }
 
   public void removeById(long id) {
-    simpleDatabase.remove(id);
+    simpleDatabase.get(id).enableDeleteFlag();
   }
 }
